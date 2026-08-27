@@ -836,54 +836,44 @@ header {
 
 .contact {
     max-width: none;
+
     background: var(--sage-light);
+
+    text-align: center;
 }
 
 .contact-content {
-    max-width: 720px;
-    margin: 0 auto;
+    max-width: 750px;
 
-    text-align: center;
+    margin: 0 auto;
+}
+
+.contact-content .eyebrow {
+    margin-bottom: 20px;
 }
 
 .contact-content h2 {
     margin-bottom: 25px;
 
-    font-size: clamp(2.5rem, 5vw, 4rem);
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+
     font-weight: normal;
-    line-height: 1.15;
+
+    line-height: 1.1;
 }
 
 .contact-text {
-    max-width: 580px;
-    margin: 0 auto 35px;
+    max-width: 620px;
 
-    font-size: 1.05rem;
+    margin: 0 auto 40px;
+
+    font-size: 1.1rem;
+
     color: var(--text-light);
 }
 
-.contact-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 12px;
-
-    padding-bottom: 6px;
-
-    border-bottom: 1px solid var(--sage-dark);
-
-    font-family: Arial, sans-serif;
-    font-size: 0.85rem;
-    color: var(--sage-dark);
-
-    transition: gap 0.3s ease;
-}
-
-.contact-link:hover {
-    gap: 20px;
-}
-
-.contact-link span {
-    font-size: 1.1rem;
+.contact .button {
+    margin-top: 0;
 }
 
 /* =========================
