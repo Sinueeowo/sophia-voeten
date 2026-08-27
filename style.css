@@ -375,6 +375,55 @@ footer {
     background: var(--cream);
 }
 
+/* =========================
+   ABOUT HIGHLIGHTS
+   ========================= */
+
+.about-highlights {
+    margin-top: 80px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+}
+
+.highlight {
+    padding-top: 25px;
+    border-top: 1px solid var(--border);
+}
+
+.highlight-icon {
+    color: var(--sage-dark);
+    font-size: 1.2rem;
+}
+
+.highlight h3 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+
+    font-size: 1.25rem;
+    font-weight: normal;
+}
+
+.highlight p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   ABOUT MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .about-highlights {
+        grid-template-columns: 1fr;
+        gap: 30px;
+        margin-top: 50px;
+    }
+
+}
 
 /* =========================
    MOBILE
