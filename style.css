@@ -426,6 +426,95 @@ footer {
 }
 
 /* =========================
+   COACHING APPROACH
+   ========================= */
+
+.coaching-approach {
+    max-width: 900px;
+    margin: 100px auto 0;
+
+    padding-top: 80px;
+    border-top: 1px solid var(--border);
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 70px;
+}
+
+.coaching-approach .section-heading {
+    margin-bottom: 0;
+}
+
+.approach-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.approach-item {
+    display: grid;
+    grid-template-columns: 45px 1fr;
+    gap: 20px;
+
+    padding: 20px 0;
+    border-top: 1px solid var(--border);
+}
+
+.approach-item:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+.approach-item > span {
+    color: var(--sage-dark);
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+}
+
+.approach-item h3 {
+    font-size: 1.2rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.approach-item p {
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   COACHING DISCLAIMER
+   ========================= */
+
+.coaching-disclaimer {
+    max-width: 900px;
+    margin: 60px auto 0;
+
+    padding: 20px 25px;
+
+    border-left: 2px solid var(--sage);
+
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-light);
+}
+
+
+/* =========================
+   COACHING MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .coaching-approach {
+        grid-template-columns: 1fr;
+        gap: 40px;
+        margin-top: 70px;
+        padding-top: 60px;
+    }
+
+}
+
+/* =========================
    MOBILE
    ========================= */
 
