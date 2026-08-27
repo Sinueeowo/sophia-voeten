@@ -893,19 +893,80 @@ header {
    ========================= */
 
 footer {
-    padding: 30px 40px;
-
-    text-align: center;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 0.8rem;
-
-    color: var(--text-light);
+    padding: 35px 40px;
 
     background: var(--cream);
+
+    border-top: 1px solid var(--border);
+
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--text-light);
 }
 
+.footer-content {
+    max-width: 1120px;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 30px;
+}
+
+.footer-name {
+    color: var(--text);
+    font-family: Georgia, "Times New Roman", serif;
+    font-size: 1rem;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: var(--sage-dark);
+}
+
+.footer-copyright {
+    white-space: nowrap;
+}
+
+
+/* =========================
+   FOOTER MOBILE
+   ========================= */
+
+@media (max-width: 650px) {
+
+    footer {
+        padding: 30px 25px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+
+        text-align: center;
+
+        gap: 20px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 15px 20px;
+    }
+
+}
 
 /* =========================
    TABLET
