@@ -837,43 +837,55 @@ header {
 .contact {
     max-width: none;
 
+    min-height: 70vh;
+
+    padding-top: 150px;
+    padding-bottom: 150px;
+
     background: var(--sage-light);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     text-align: center;
 }
 
 .contact-content {
-    max-width: 750px;
+    width: 100%;
+    max-width: 900px;
 
     margin: 0 auto;
 }
 
 .contact-content .eyebrow {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
 }
 
 .contact-content h2 {
-    margin-bottom: 25px;
+    max-width: 850px;
 
-    font-size: clamp(2.8rem, 5vw, 4.5rem);
+    margin: 0 auto 30px;
+
+    font-size: clamp(3rem, 6vw, 5.5rem);
 
     font-weight: normal;
 
-    line-height: 1.1;
+    line-height: 1.05;
 }
 
 .contact-text {
-    max-width: 620px;
+    max-width: 650px;
 
-    margin: 0 auto 40px;
+    margin: 0 auto;
 
-    font-size: 1.1rem;
+    font-size: 1.15rem;
 
     color: var(--text-light);
 }
 
-.contact .button {
-    margin-top: 0;
+.contact .hero-buttons {
+    margin-top: 45px;
 }
 
 /* =========================
