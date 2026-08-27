@@ -836,72 +836,54 @@ header {
 
 .contact {
     max-width: none;
-
     background: var(--sage-light);
 }
 
-.contact-layout {
-    max-width: 1120px;
-
+.contact-content {
+    max-width: 720px;
     margin: 0 auto;
 
-    display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 120px;
-
-    align-items: start;
+    text-align: center;
 }
 
-.contact-heading h2 {
-    font-size: clamp(3rem, 6vw, 5.5rem);
+.contact-content h2 {
+    margin-bottom: 25px;
 
+    font-size: clamp(2.5rem, 5vw, 4rem);
     font-weight: normal;
-
-    line-height: 1.02;
+    line-height: 1.15;
 }
 
-.contact-details {
-    padding-top: 45px;
+.contact-text {
+    max-width: 580px;
+    margin: 0 auto 35px;
 
-    max-width: 450px;
-}
-
-.contact-details > p {
-    margin-bottom: 40px;
-
-    font-size: 1.15rem;
-
+    font-size: 1.05rem;
     color: var(--text-light);
 }
 
 .contact-link {
     display: inline-flex;
-
     align-items: center;
+    gap: 12px;
 
-    gap: 15px;
-
-    padding-bottom: 8px;
+    padding-bottom: 6px;
 
     border-bottom: 1px solid var(--sage-dark);
 
     font-family: Arial, sans-serif;
-
     font-size: 0.85rem;
-
     color: var(--sage-dark);
 
     transition: gap 0.3s ease;
 }
 
 .contact-link:hover {
-    gap: 25px;
+    gap: 20px;
 }
 
 .contact-link span {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
 }
 
 /* =========================
