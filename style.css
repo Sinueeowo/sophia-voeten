@@ -513,7 +513,28 @@ header {
    ========================= */
 
 .qualifications {
+    max-width: none;
     background: var(--cream);
+}
+
+.qualifications-intro {
+    max-width: 1120px;
+    margin: 0 auto 110px;
+}
+
+.qualifications-intro h2 {
+    max-width: 800px;
+
+    font-size: clamp(2.5rem, 5vw, 4.5rem);
+    font-weight: normal;
+
+    line-height: 1.08;
+}
+
+.qualifications-intro h2 em,
+.focus-intro h3 em {
+    color: var(--sage-dark);
+    font-style: italic;
 }
 
 
@@ -522,146 +543,210 @@ header {
    ========================= */
 
 .education {
-    margin-top: 20px;
+    max-width: 1120px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 180px 1fr;
+
+    gap: 70px;
 }
 
-.education-label {
-    padding-bottom: 20px;
+.education-side {
+    padding-top: 8px;
 
     font-family: Arial, sans-serif;
-
     font-size: 0.72rem;
 
     text-transform: uppercase;
-
     letter-spacing: 0.15em;
 
     color: var(--sage-dark);
 }
 
-.education-item {
-    display: grid;
-
-    grid-template-columns: 130px 1fr;
-
-    gap: 55px;
-
-    padding: 55px 0;
-
+.education-list {
     border-top: 1px solid var(--border);
 }
 
-.education-item:last-child {
+.education-item {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+
+    gap: 45px;
+
+    padding: 45px 0;
+
     border-bottom: 1px solid var(--border);
 }
 
-.education-year {
+.education-meta {
+    padding-top: 4px;
+
     font-family: Arial, sans-serif;
-
-    font-size: 0.78rem;
-
-    line-height: 1.5;
+    font-size: 0.75rem;
 
     color: var(--sage-dark);
 }
 
-.education-content {
-    max-width: 750px;
-}
-
-.education-degree {
-    margin-bottom: 3px;
-
-    font-family: Arial, sans-serif;
-
-    font-size: 0.72rem;
-
-    text-transform: uppercase;
-
-    letter-spacing: 0.1em;
-
-    color: var(--sage-dark);
-}
-
-.education-content h3 {
+.education-type {
     margin-bottom: 5px;
 
-    font-size: clamp(1.8rem, 3vw, 2.6rem);
+    font-family: Arial, sans-serif;
+    font-size: 0.7rem;
+
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+
+    color: var(--sage-dark);
+}
+
+.education-main h3 {
+    margin-bottom: 7px;
+
+    font-size: clamp(1.8rem, 3vw, 2.8rem);
 
     font-weight: normal;
-
-    line-height: 1.2;
+    line-height: 1.15;
 }
 
-.education-institution {
-    margin-bottom: 20px;
-
-    font-size: 1rem;
+.education-place {
+    color: var(--text-light);
 
     font-style: italic;
-
-    color: var(--text-light);
 }
 
-.education-description {
-    max-width: 650px;
-
-    color: var(--text-light);
+.education-item.featured {
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 
 /* =========================
-   EXPERIENCE
+   FOCUS
    ========================= */
 
-.experience {
-    margin-top: 130px;
+.qualification-focus {
+    max-width: 1120px;
+
+    margin: 140px auto 0;
+
+    padding-top: 90px;
+
+    border-top: 1px solid var(--border);
 
     display: grid;
 
     grid-template-columns: 1fr 1fr;
 
-    gap: 80px;
+    gap: 100px;
 }
 
-.experience-heading {
+.focus-intro {
     max-width: 450px;
 }
 
-.experience-heading h2,
-.skills-heading h2 {
-    font-size: clamp(2rem, 3.5vw, 3rem);
+.focus-intro h3 {
+    font-size: clamp(2rem, 3.5vw, 3.2rem);
 
     font-weight: normal;
 
     line-height: 1.15;
 }
 
-.experience-content {
+.focus-items {
     border-top: 1px solid var(--border);
 }
 
-.experience-item {
+.focus-item {
     display: grid;
 
-    grid-template-columns: 90px 1fr;
+    grid-template-columns: 45px 1fr;
 
-    gap: 25px;
+    gap: 20px;
 
     padding: 25px 0;
 
     border-bottom: 1px solid var(--border);
 }
 
-.experience-year {
+.focus-item > span {
     font-family: Arial, sans-serif;
 
-    font-size: 0.75rem;
+    font-size: 0.72rem;
 
     color: var(--sage-dark);
 }
 
-.experience-item h3 {
+.focus-item h4 {
+    margin-bottom: 7px;
+
+    font-size: 1.15rem;
+
+    font-weight: normal;
+}
+
+.focus-item p {
+    max-width: 430px;
+
+    font-size: 0.9rem;
+
+    color: var(--text-light);
+}
+
+
+/* =========================
+   PROFESSIONAL EXPERIENCE
+   ========================= */
+
+.professional-experience {
+    max-width: 1120px;
+
+    margin: 140px auto 0;
+
+    padding-top: 90px;
+
+    border-top: 1px solid var(--border);
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 100px;
+}
+
+.professional-experience > div:first-child {
+    max-width: 450px;
+}
+
+.professional-experience > div:first-child h3 {
+    font-size: clamp(2rem, 3vw, 2.8rem);
+
+    font-weight: normal;
+
+    line-height: 1.15;
+}
+
+.professional-role {
+    display: grid;
+
+    grid-template-columns: 90px 1fr;
+
+    gap: 25px;
+
+    padding-top: 25px;
+
+    border-top: 1px solid var(--border);
+}
+
+.role-date {
+    font-family: Arial, sans-serif;
+
+    font-size: 0.72rem;
+
+    color: var(--sage-dark);
+}
+
+.professional-role h4 {
     margin-bottom: 5px;
 
     font-size: 1.25rem;
@@ -671,17 +756,17 @@ header {
     line-height: 1.3;
 }
 
-.experience-company {
+.role-company {
     margin-bottom: 12px;
 
     font-family: Arial, sans-serif;
 
-    font-size: 0.8rem;
+    font-size: 0.78rem;
 
     color: var(--sage-dark);
 }
 
-.experience-item p:last-child {
+.professional-role p:last-child {
     font-size: 0.9rem;
 
     color: var(--text-light);
@@ -689,55 +774,56 @@ header {
 
 
 /* =========================
-   SKILLS
+   QUALIFICATIONS MOBILE
    ========================= */
 
-.skills-section {
-    margin-top: 130px;
+@media (max-width: 800px) {
+
+    .qualifications-intro {
+        margin-bottom: 70px;
+    }
+
+    .education {
+        grid-template-columns: 1fr;
+
+        gap: 25px;
+    }
+
+    .education-item {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .qualification-focus,
+    .professional-experience {
+        grid-template-columns: 1fr;
+
+        gap: 50px;
+
+        margin-top: 90px;
+
+        padding-top: 60px;
+    }
+
 }
 
-.skills-heading {
-    margin-bottom: 45px;
-}
+@media (max-width: 550px) {
 
-.skills-grid {
-    display: grid;
+    .qualifications-intro h2 {
+        font-size: 2.5rem;
+    }
 
-    grid-template-columns: repeat(3, 1fr);
+    .education-main h3 {
+        font-size: 2rem;
+    }
 
-    gap: 20px;
-}
+    .professional-role {
+        grid-template-columns: 1fr;
 
-.skill {
-    min-height: 230px;
+        gap: 8px;
+    }
 
-    padding: 35px;
-
-    background: var(--beige);
-}
-
-.skill-number {
-    font-family: Arial, sans-serif;
-
-    font-size: 0.72rem;
-
-    color: var(--sage-dark);
-}
-
-.skill h3 {
-    margin: 25px 0 15px;
-
-    font-size: 1.35rem;
-
-    font-weight: normal;
-
-    line-height: 1.3;
-}
-
-.skill p {
-    font-size: 0.9rem;
-
-    color: var(--text-light);
 }
 
 
