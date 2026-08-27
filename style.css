@@ -838,12 +838,45 @@ header {
     max-width: none;
 
     background: var(--sage-light);
+
+    text-align: center;
 }
 
-.contact .section-heading {
-    max-width: 750px;
+.contact-content {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    padding: 30px 0;
 }
 
+.contact-content .eyebrow {
+    margin-bottom: 20px;
+}
+
+.contact-content h2 {
+    margin-bottom: 25px;
+
+    font-size: clamp(2.8rem, 5vw, 4.5rem);
+
+    font-weight: normal;
+
+    line-height: 1.1;
+}
+
+.contact-text {
+    max-width: 620px;
+
+    margin: 0 auto 35px;
+
+    font-size: 1.1rem;
+
+    color: var(--text-light);
+}
+
+.contact .button {
+    margin-top: 5px;
+}
 
 /* =========================
    FOOTER
