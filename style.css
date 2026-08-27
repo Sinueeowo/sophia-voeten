@@ -345,6 +345,118 @@ header {
     color: var(--text-light);
 }
 
+/* =========================
+   QUALIFICATIONS
+   ========================= */
+
+.qualification-group {
+    margin-bottom: 90px;
+}
+
+.group-title {
+    font-family: Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    font-size: 0.75rem;
+    font-weight: normal;
+    color: var(--sage-dark);
+
+    margin-bottom: 30px;
+}
+
+.qualification-item {
+    display: grid;
+    grid-template-columns: 180px 1fr;
+    gap: 50px;
+
+    padding: 35px 0;
+
+    border-top: 1px solid var(--border);
+}
+
+.qualification-item:last-child {
+    border-bottom: 1px solid var(--border);
+}
+
+.qualification-date {
+    font-family: Arial, sans-serif;
+    font-size: 0.8rem;
+    color: var(--sage-dark);
+}
+
+.qualification-item h3 {
+    font-size: 1.4rem;
+    font-weight: normal;
+    margin-bottom: 5px;
+}
+
+.qualification-item .institution {
+    font-family: Arial, sans-serif;
+    font-size: 0.85rem;
+    color: var(--sage-dark);
+    margin-bottom: 15px;
+}
+
+.qualification-item p:last-child {
+    max-width: 650px;
+    color: var(--text-light);
+}
+
+
+/* =========================
+   SKILLS
+   ========================= */
+
+.skills-section {
+    margin-top: 20px;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.skill {
+    padding: 30px;
+
+    background: var(--beige);
+}
+
+.skill-number {
+    font-family: Arial, sans-serif;
+    font-size: 0.75rem;
+    color: var(--sage-dark);
+}
+
+.skill h3 {
+    font-size: 1.25rem;
+    font-weight: normal;
+    margin: 15px 0 10px;
+}
+
+.skill p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+}
+
+
+/* =========================
+   QUALIFICATIONS MOBILE
+   ========================= */
+
+@media (max-width: 800px) {
+
+    .qualification-item {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
 
 /* =========================
    CONTACT
